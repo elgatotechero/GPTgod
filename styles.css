@@ -98,39 +98,3 @@ body {
         font-size: 1.2em;
     }
 }
-
-
-
-.message {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 50px;
-    text-align: center;
-}
-
-
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-/* Media queries para hacer la página responsive */
-@media only screen and (max-width: 768px) {
-    h1 {
-        font-size: 1.5em;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    h1 {
-        font-size: 1.2em;
-    }
-}
