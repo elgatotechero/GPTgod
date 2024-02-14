@@ -1,23 +1,43 @@
-$(document).ready(function(){
-      // Al cargar la página, ocultamos las cortinas
-      $('.left-curtain').css('width', '0%');
-      $('.right-curtain').css('width', '0%');
-    
-      $('.valentines-day').click(function(){
-        // Animación de desvanecimiento de los elementos del sobre
-        $('.envelope').css({'animation':'fall 3s linear 1', '-webkit-animation':'fall 3s linear 1'});
-        $('.envelope').fadeOut(800, function() {
-          // Ocultar elementos dentro de .valentines-day
-          $('.valentines-day .heart, .valentines-day .text, .valentines-day .front').hide();
-          
-    
-          // Hacer visible la carta con una animación ondulante
-          $('#card').css({'visibility':'visible', 'opacity': 0, 'transform': 'scale(0.1)'});
-          $('#card').animate({'opacity': 1}, {duration: 1000, step: function(now, fx) {
-            var scale = 1 + Math.sin(now * Math.PI) * 0.1; // Calculamos la escala basada en la función seno
-            $(this).css('transform', 'scale(' + scale + ')');
-          }}); // Animación de ondulación
-        });
-      });
-    });
-    
+const collage = document.getElementById('collage');
+const messages = [
+    "¡Te amo más que a nada en este mundo!🤍",
+    "Eres mi luz en la oscuridad.🤍",
+    "Gracias por ser mi felicidad.🤍",
+    "En este mundo, solo estamos los dos.🤍",
+    "Nuestro amor lo supera todo.🤍"
+];
+
+let currentIndex = 0;
+
+document.addEventListener('click', () => {
+    if (currentIndex < photos.length) {
+        const photoUrl = photos[currentIndex];
+        const photo = document.createElement('div');
+        photo.classList.add('photo');
+        photo.style.backgroundImage = `url(${photoUrl})`;
+        collage.appendChild(photo);
+        currentIndex++;
+        if (currentIndex === photos.length) {
+            const message = document.createElement('p');
+            const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+            message.textContent = randomMessage;
+            message.classList.add('message');
+            collage.appendChild(message);
+        }
+    }
+});
+
+const photos = [
+    'https://raw.githubusercontent.com/elgatotechero/paramiamor/main/SUKUNA.jpeg',
+    'https://raw.githubusercontent.com/elgatotechero/paramiamor/main/fotito1.jpeg',
+    'https://raw.githubusercontent.com/elgatotechero/paramiamor/main/fotito2.jpeg',
+    'https://raw.githubusercontent.com/elgatotechero/paramiamor/main/fotito3.jpeg',
+    'https://raw.githubusercontent.com/elgatotechero/paramiamor/main/fotito4.jpeg',
+    'https://raw.githubusercontent.com/elgatotechero/paramiamor/main/fotito5.jpeg',
+    'https://raw.githubusercontent.com/elgatotechero/paramiamor/main/los%202-1.jpeg',
+    'https://raw.githubusercontent.com/elgatotechero/paramiamor/main/los%202-2.jpeg',
+    'https://raw.githubusercontent.com/elgatotechero/paramiamor/main/los%202-3.jpeg',
+    'https://raw.githubusercontent.com/elgatotechero/paramiamor/main/los%202-4.jpeg',
+    'https://raw.githubusercontent.com/elgatotechero/paramiamor/main/los%202-5.jpeg',
+    'https://raw.githubusercontent.com/elgatotechero/paramiamor/main/anillos.jpeg'
+];
