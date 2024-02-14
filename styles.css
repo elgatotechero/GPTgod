@@ -1,14 +1,26 @@
-body {
+body, html {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+h1 {
+    font-size: 2em;
 }
 
 #collage {
     position: relative;
     width: 100%;
     height: 100vh;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -17,8 +29,8 @@ body {
 }
 
 .photo {
-    width: calc(15% - 20px); /* Ajustar el tamaño de las imágenes y la separación */
-    height: calc(15vh - 10px); /* Ajustar el tamaño de las imágenes y la separación */
+    width: calc(30% - 20px); /* Ajustar el tamaño de las imágenes y la separación */
+    height: calc(25vh - 20px); /* Ajustar el tamaño de las imágenes y la separación */
     margin: 5px; /* Agregar espacio entre las imágenes */
     background-size: cover;
     background-position: center;
@@ -29,6 +41,63 @@ body {
 
 }
 
+
+
+
+.message {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.938);
+    font-size: 70px;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+#audioPlayer {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    background-color: #ff4d4d;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Media queries para hacer la página responsive */
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.2em;
+    }
+}
 
 
 
