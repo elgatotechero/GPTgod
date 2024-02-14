@@ -28,16 +28,16 @@ document.addEventListener('click', () => {
 });
 
 const photos = [
-    'https://raw.githubusercontent.com/elgatotechero/paramiamor/main/SUKUNA.jpeg',
-    'https://raw.githubusercontent.com/elgatotechero/paramiamor/main/fotito1.jpeg',
-    'https://raw.githubusercontent.com/elgatotechero/paramiamor/main/fotito2.jpeg',
-    'https://raw.githubusercontent.com/elgatotechero/paramiamor/main/fotito3.jpeg',
-    'https://raw.githubusercontent.com/elgatotechero/paramiamor/main/fotito4.jpeg',
-    'https://raw.githubusercontent.com/elgatotechero/paramiamor/main/fotito5.jpeg',
-    'https://raw.githubusercontent.com/elgatotechero/paramiamor/main/los%202-1.jpeg',
-    'https://raw.githubusercontent.com/elgatotechero/paramiamor/main/los%202-2.jpeg',
-    'https://raw.githubusercontent.com/elgatotechero/paramiamor/main/los%202-3.jpeg',
-    'https://raw.githubusercontent.com/elgatotechero/paramiamor/main/los%202-4.jpeg',
-    'https://raw.githubusercontent.com/elgatotechero/paramiamor/main/los%202-5.jpeg',
-    'https://raw.githubusercontent.com/elgatotechero/paramiamor/main/anillos.jpeg'
+    'https://raw.githubusercontent.com/elgatotechero/GPTgod/main/SUKUNA.jpeg',
+    'https://raw.githubusercontent.com/elgatotechero/GPTgod/main/fotito1.jpeg',
+    'https://raw.githubusercontent.com/elgatotechero/GPTgod/main/fotito2.jpeg',
+    'https://raw.githubusercontent.com/elgatotechero/GPTgod/main/fotito3.jpeg',
+    'https://raw.githubusercontent.com/elgatotechero/GPTgod/main/fotito4.jpeg',
+    'https://raw.githubusercontent.com/elgatotechero/GPTgod/main/fotito5.jpeg',
+    'https://raw.githubusercontent.com/elgatotechero/GPTgod/main/los%202-1.jpeg',
+    'https://raw.githubusercontent.com/elgatotechero/GPTgod/main/los%202-2.jpeg',
+    'https://raw.githubusercontent.com/elgatotechero/GPTgod/main/los%202-3.jpeg',
+    'https://raw.githubusercontent.com/elgatotechero/GPTgod/main/los%202-4.jpeg',
+    'https://raw.githubusercontent.com/elgatotechero/GPTgod/main/los%202-5.jpeg',
+    'https://raw.githubusercontent.com/elgatotechero/GPTgod/main/anillos.jpeg'
 ];
