@@ -4,6 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Collage de San Valentín</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        #audioPlayer {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 1000;
+            background-color: #ff4d4d;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
+            outline: none;
+        }
+    </style>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,10 +36,13 @@
             <!-- Aquí se generarán dinámicamente las imágenes -->
         </div>
     </div>
-    <audio autoplay loop>
-        <source src="ruta/al/archivo/background_music.mp3" type="audio/mpeg">
-        Tu navegador no soporta el elemento de audio.
+    <audio id="bgMusic" loop>
+        <source src="la musiquita.mp3" type="audio/mpeg">
+        Tu navegador no soporta la reproducción de audio.
     </audio>
+    <button id="audioPlayer">❤️</button>
     <script src="script.js"></script>
 </body>
+
+  
 </html>
