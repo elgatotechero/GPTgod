@@ -41,3 +41,15 @@ const photos = [
     'https://raw.githubusercontent.com/elgatotechero/GPTgod/main/los%202-5.jpeg',
     'https://raw.githubusercontent.com/elgatotechero/GPTgod/main/anillos.jpeg'
 ];
+const audioPlayer = document.getElementById('audioPlayer');
+const bgMusic = document.getElementById('bgMusic');
+
+audioPlayer.addEventListener('click', () => {
+    if (bgMusic.paused) {
+        bgMusic.play();
+        audioPlayer.textContent = '⏸️';
+    } else {
+        bgMusic.pause();
+        audioPlayer.textContent = '❤️';
+    }
+});
